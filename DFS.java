@@ -8,7 +8,7 @@ public class DFS
         if(maze[y][x] == 9) //exit cell
         {
             maze[y][x] = 2;
-            //path.add(new int[]{x, y});
+            path.add(new int[]{x, y});
             return true;
         }
         else if(maze[y][x] == 0) //navigable cell
